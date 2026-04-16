@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Wasif Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "email": "wasif.hasan@gmail.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["university", "project partner"],
+    "bio": "Worked together on multiple university projects, especially web development assignments.",
+    "goal": 12,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Arif Almas",
+    "picture": "https://randomuser.me/api/portraits/men/21.jpg",
+    "email": "arif.almas@gmail.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["school", "close friend"],
+    "bio": "School friend who still checks in regularly. We often talk about life goals and memories.",
+    "goal": 10,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 3,
+    "name": "Nishad Mahmud",
+    "picture": "https://randomuser.me/api/portraits/men/31.jpg",
+    "email": "nishad.mahmud@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["gym", "fitness buddy"],
+    "bio": "Met at the gym. We keep each other accountable for workouts and diet routines.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 4,
+    "name": "Istiak Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/41.jpg",
+    "email": "istiak.ahmed@gmail.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["office", "colleague"],
+    "bio": "Colleague from the tech team. We collaborate on frontend features and debugging tasks.",
+    "goal": 10,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 5,
+    "name": "Rizbe Sohan",
+    "picture": "https://randomuser.me/api/portraits/men/51.jpg",
+    "email": "rizbe.sohan@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["travel", "adventure buddy"],
+    "bio": "Travel partner for trips around Bangladesh. We enjoy exploring new places together.",
+    "goal": 14,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 6,
+    "name": "Arif Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/61.jpg",
+    "email": "arif.hossain.dev@gmail.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["developer", "online friend"],
+    "bio": "Met through a developer community. We often exchange coding resources and ideas.",
+    "goal": 10,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 7,
+    "name": "Kayes Mahmud",
+    "picture": "https://randomuser.me/api/portraits/men/71.jpg",
+    "email": "kayes.mahmud@gmail.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["college", "classmate"],
+    "bio": "College classmate. We used to study together and share notes before exams.",
+    "goal": 12,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 8,
+    "name": "Ahmed Forhad",
+    "picture": "https://randomuser.me/api/portraits/men/81.jpg",
+    "email": "ahmed.forhad@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["startup", "mentor"],
+    "bio": "Mentor who provides guidance on career growth and startup ideas.",
+    "goal": 10,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 9,
+    "name": "Azharul Rasel",
+    "picture": "https://randomuser.me/api/portraits/men/91.jpg",
+    "email": "azharul.rasel@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["neighbor", "family friend"],
+    "bio": "Known since childhood as a neighbor. Our families are closely connected.",
+    "goal": 14,
+    "next_due_date": "2026-04-04"
+  },
+  {
+    "id": 10,
+    "name": "Mustakim Rahat",
+    "picture": "https://randomuser.me/api/portraits/men/19.jpg",
+    "email": "mustakim.rahat@gmail.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["freelance", "client"],
+    "bio": "Freelance client turned friend. We often discuss projects and future collaborations.",
+    "goal": 12,
+    "next_due_date": "2026-04-20"
+  }
+]

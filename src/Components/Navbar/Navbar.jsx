@@ -8,8 +8,8 @@ const Navbar = () => {
     <div className=" bg-base-100 shadow-sm">
       <div className="navbar px-8 py-3 flex flex-col md:flex-row gap-3  justify-between ">
         <div className="">
-          <h1 className="font-semibold text-3xl primary-color">
-            <span className="font-bold text-black">Keen</span>Keeper
+          <h1 className="font-bold text-4xl primary-color">
+            <span className="font-extrabold text-black">Keen</span>Keeper
           </h1>
         </div>
         <div className="">
