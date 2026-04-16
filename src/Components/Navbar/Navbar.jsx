@@ -1,12 +1,40 @@
 import React from "react";
 import { Link } from "react-router";
+import "../../App.css";
+import { ChartArea, Clock, Home } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div>
-      <Link to="/">Home</Link>
-      <Link to="/timeline">Timeline</Link>
-      <Link to="/stats">Stats</Link>
+    <div className=" bg-base-100 shadow-sm">
+      <div className="navbar px-8 py-3 flex flex-col md:flex-row gap-3  justify-between ">
+        <div className="">
+          <a className="font-semibold text-3xl primary-color">
+            <span className="font-bold text-black">Keen</span>Keeper
+          </a>
+        </div>
+        <div className="">
+          <ul className=" flex gap-7">
+            <Link
+              className="text-[1.1rem] font-medium secondary-color flex items-center gap-1"
+              to="/"
+            >
+              <Home size={18}></Home> Home
+            </Link>
+            <Link
+              className="text-[1.1rem] font-medium secondary-color flex items-center gap-1"
+              to="/timeline"
+            >
+              <Clock size={18}></Clock> Timeline
+            </Link>
+            <Link
+              className="text-[1.1rem] font-medium secondary-color flex items-center gap-1"
+              to="/stats"
+            >
+              <ChartArea size={18}></ChartArea> Stats
+            </Link>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
