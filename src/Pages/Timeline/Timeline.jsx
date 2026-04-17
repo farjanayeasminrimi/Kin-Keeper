@@ -51,14 +51,14 @@ const Timeline = () => {
       <div className="space-y-4">
         {/* history card  */}
         {filterData.map((item, index) => (
-          <div key={index} className="flex gap-3 items-center">
+          <div key={index} className="flex gap-4 items-center p-5 shadow-lg rounded-2xl bg-white">
             <div>{item.icon}</div>
             <div>
-              <h1 className="primary-color font-bold text-2xl">
+              <h1 className="primary-color font-bold text-xl">
                 {item.type}{" "}
                 <span className="secondary-color font-normal">with {item.username}</span>
               </h1>
-              <span className="font-bold secondary-color text-xl">{formatDateTime()}</span>
+              <span className="font-bold secondary-color text-[.9rem]">{formatDateTime()}</span>
             </div>
           </div>
         ))}

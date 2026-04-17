@@ -8,7 +8,7 @@ const HistoryProvider = ({ children }) => {
   const callHandle = (username) => {
     const allCallHistory = {
       username,
-      icon: <Phone></Phone>,
+      icon: <Phone size={25}></Phone>,
       type: "Call",
     };
     setCall([...call, allCallHistory]);
@@ -17,7 +17,7 @@ const HistoryProvider = ({ children }) => {
   const chatHandle = (username) => {
     const allChatHistory = {
       username,
-      icon: <MessageCircleMore></MessageCircleMore>,
+      icon: <MessageCircleMore size={25}></MessageCircleMore>,
       type: "Chat",
     };
     setCall([...call, allChatHistory]);
@@ -26,7 +26,7 @@ const HistoryProvider = ({ children }) => {
   const videoHandle = (username) => {
     const allVideoHistory = {
       username,
-      icon: <Video></Video>,
+      icon: <Video size={25}></Video>,
       type: "Video",
     };
     setCall([...call, allVideoHistory]);

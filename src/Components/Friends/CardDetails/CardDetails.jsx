@@ -26,9 +26,9 @@ const CardDetails = () => {
   // console.log(name, tags, status, bio, contact, goal, next_due_date);
 
   return (
-    <div className="bg-[#F8FAFC] my-5 py-6 container mx-auto px-4 grid grid-cols-4 gap-4">
+    <div className="bg-[#F8FAFC] my-5 py-6 container mx-auto px-4  grid grid-cols-1 md:grid-cols-4 gap-4">
       {/* Side bar */}
-      <aside className="col-span-1">
+      <div className="col-span-1">
         {/* person details */}
 
         <div className="space-y-2 flex flex-col items-center p-5 shadow-lg rounded-2xl bg-white justify-center text-center ">
@@ -69,10 +69,10 @@ const CardDetails = () => {
             <h2 className="font-semibold text-xl text-red-500">Delete</h2>
           </div>
         </div>
-      </aside>
+      </div>
 
       {/* right bar details */}
-      <div className="col-span-3">
+      <div className="col-span-1 md:col-span-3">
         {/* Intro Stats */}
         <div className="my-9 px-4 md:px-0 grid grid-cols-2 md:grid-cols-3 gap-4 container mx-auto">
           <div className="text-center bg-white shadow-lg rounded-lg p-8">
