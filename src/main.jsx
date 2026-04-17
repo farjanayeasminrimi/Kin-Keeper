@@ -9,6 +9,7 @@ import Timeline from "./Pages/Timeline/Timeline.jsx";
 import Stats from "./Pages/Stats/Stats.jsx";
 import NotFound from "./Components/NotFound/NotFound.jsx";
 import CardDetails from "./Components/Friends/CardDetails/CardDetails.jsx";
+import HistoryProvider from "./Context/HistoryProvider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,8 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <HistoryProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </HistoryProvider>
   </StrictMode>,
 );

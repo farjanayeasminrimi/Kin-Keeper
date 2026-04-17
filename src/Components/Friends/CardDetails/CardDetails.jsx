@@ -5,8 +5,11 @@ import "../../../App.css";
 import call from "../../../assets/call.png";
 import msg from "../../../assets/text.png";
 import video from "../../../assets/video.png";
+import { useContext } from "react";
+import { HistoryContext } from "../../../Context/HistoryProvider";
 
 const CardDetails = () => {
+  const { callHandle, chatHandle } = useContext(HistoryContext);
   const cardData = useLoaderData();
   const { id } = useParams();
   const details = cardData.find((card) => card.id == id);
@@ -20,7 +23,7 @@ const CardDetails = () => {
     next_due_date,
     picture,
   } = details;
-  console.log(name, tags, status, bio, contact, goal, next_due_date);
+  // console.log(name, tags, status, bio, contact, goal, next_due_date);
 
   return (
     <div className="bg-[#F8FAFC] my-5 py-6 container mx-auto px-4 grid grid-cols-4 gap-4">
@@ -103,18 +106,27 @@ const CardDetails = () => {
           <h2 className="text-2xl font-semibold primary-color mb-3">Quick Check-In</h2>
 
           <div className=" px-4 md:px-0 grid grid-cols-2 md:grid-cols-3 gap-4 container mx-auto">
-            <div className="text-center bg-white shadow-lg rounded-lg p-8">
+            {/* call */}
+            <div
+              onClick={() => callHandle(name)}
+              className="text-center bg-white shadow-lg rounded-lg p-8"
+            >
               <div className="flex justify-center mb-3">
                 <img src={call} alt="icon" />
               </div>
               <span className="secondary-color font-medium mt-1">Call</span>
             </div>
-            <div className="text-center bg-white shadow-lg rounded-lg p-8">
+            {/* chat */}
+            <div
+              onClick={() => chatHandle(name)}
+              className="text-center bg-white shadow-lg rounded-lg p-8"
+            >
               <div className="flex justify-center mb-3">
                 <img src={msg} alt="icon" />
               </div>
               <span className="secondary-color font-medium mt-1">Text</span>
             </div>
+            {/* Video */}
             <div className="text-center bg-white shadow-lg rounded-lg p-8">
               <div className="flex justify-center mb-3">
                 <img src={video} alt="icon" />
