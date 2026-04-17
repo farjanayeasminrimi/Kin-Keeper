@@ -8,6 +8,7 @@ import Home from "./Pages/Home/Home.jsx";
 import Timeline from "./Pages/Timeline/Timeline.jsx";
 import Stats from "./Pages/Stats/Stats.jsx";
 import NotFound from "./Components/NotFound/NotFound.jsx";
+import CardDetails from "./Components/Friends/CardDetails/CardDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
       {
         path: "stats",
         Component: Stats,
+      },
+      {
+        path: "carts/:id",
+        loader: async () => await fetch(`/Data/Friends.json`),
+        Component: CardDetails,
       },
     ],
   },
