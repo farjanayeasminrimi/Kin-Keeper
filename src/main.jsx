@@ -7,6 +7,7 @@ import { RouterProvider } from "react-router/dom";
 import Home from "./Pages/Home/Home.jsx";
 import Timeline from "./Pages/Timeline/Timeline.jsx";
 import Stats from "./Pages/Stats/Stats.jsx";
+import NotFound from "./Components/NotFound/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         Component: Stats,
       },
     ],
+  },
+  {
+    path: "*",
+    Component: NotFound,
   },
 ]);
 createRoot(document.getElementById("root")).render(

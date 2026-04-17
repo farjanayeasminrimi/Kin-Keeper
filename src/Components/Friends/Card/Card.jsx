@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import "../../../App.css";
 
 const Card = ({ friend }) => {
   const { id, name, days_since_contact: joining, tags, status, picture } = friend;
