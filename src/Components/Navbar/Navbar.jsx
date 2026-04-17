@@ -5,7 +5,7 @@ import { ChartArea, Clock, Home } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className=" bg-base-100 shadow-sm">
+    <div className=" bg-base-100 shadow-sm sticky top-0 left-0 z-10">
       <div className="navbar px-8 py-3 flex flex-col md:flex-row gap-3  justify-between ">
         <div className="">
           <h1 className="font-bold text-4xl primary-color">
