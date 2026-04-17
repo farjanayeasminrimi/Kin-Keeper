@@ -17,7 +17,13 @@ const Home = () => {
         <FriendsIntro callFriendRes={callFriendRes}></FriendsIntro>
       </Suspense>
 
-      <Suspense>
+      <Suspense
+        fallback={
+          <div className="flex justify-center">
+            <span className=" loading loading-ring loading-xl"></span>
+          </div>
+        }
+      >
         <FriendsCarts callFriendRes={callFriendRes}></FriendsCarts>
       </Suspense>
     </div>
