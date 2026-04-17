@@ -4,11 +4,15 @@
 
 https://kin-keeper-kinny.vercel.app/
 
+---
+
 ## Description
 
-Kin Keeper is a modern web application designed to replicate real-world communication experiences within a structured digital interface. The platform enables users to simulate calling, messaging, and video interactions while maintaining an intuitive and responsive user experience.
+Kin Keeper is a user-friendly web application that simulates real-life communication in a digital environment. It enables users to interact through calling, messaging, and video features within a clean and responsive interface.
 
-In addition to communication features, the application incorporates activity tracking and data visualization, allowing users to gain insights into their interaction patterns through clear and informative statistics.
+Beyond basic interaction, the application focuses on enhancing user understanding by tracking communication activities and presenting them through clear and visually engaging data. This combination of interaction and analytics makes the experience both practical and insightful.
+
+---
 
 ## Technologies Used
 
@@ -19,9 +23,20 @@ In addition to communication features, the application incorporates activity tra
 - JavaScript (ES6)
 - React Router
 - Recharts
+- React Toastify
+
+---
 
 ## Key Features
 
-1. Comprehensive friend profile and details view
-2. Integrated call, chat, and video interaction simulation
-3. Activity tracking with data visualization and analytics
+### Detailed Friend Profiles
+
+Users can access structured and informative profiles of their connections, making it easy to view and manage friend-related information in one place.
+
+### Interactive Communication System
+
+The application allows users to simulate real-world interactions, including calls, chats, and video sessions, providing a seamless and engaging communication experience.
+
+### Activity Tracking & Data Visualization
+
+All user interactions are tracked and presented through intuitive charts and statistics, helping users analyze their communication behavior in a clear and meaningful way.
