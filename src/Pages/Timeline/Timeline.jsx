@@ -15,16 +15,15 @@ const formatDateTime = () => {
   }).format();
 };
 const Timeline = () => {
-  const { call } = useContext(HistoryContext);
+  const { filterData, manageFilter } = useContext(HistoryContext);
   // const { username, date, icon, type } = call;
-  console.log(call);
   return (
     <div className="my-9 px-4 md:px-0 container mx-auto bg-[#F8FAFC]">
       {/* Time line intro */}
-      <div>
+      <div className="space-y-4">
         <h1 className="text-[#1F2937] font-bold text-3xl">Timeline </h1>
 
-        <div className="dropdown dropdown-bottom">
+        <div className="dropdown dropdown-bottom mb-4">
           <div tabIndex={0} role="button" className="btn m-1 secondary-color font-semibold ">
             Filter timeline <ChevronDown></ChevronDown>
           </div>
@@ -32,20 +31,26 @@ const Timeline = () => {
             tabIndex="-1"
             className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
           >
-            <li>
-              <a>Short by date</a>
+            <li onClick={() => manageFilter("All")}>
+              <a>All</a>
             </li>
-            <li>
-              <a>Short by period</a>
+            <li onClick={() => manageFilter("Call")}>
+              <a>Short by Call</a>
+            </li>
+            <li onClick={() => manageFilter("Chat")}>
+              <a>Short by Text</a>
+            </li>
+            <li onClick={() => manageFilter("Video")}>
+              <a>Short by Video</a>
             </li>
           </ul>
         </div>
       </div>
 
       {/* History */}
-      <div>
+      <div className="space-y-4">
         {/* history card  */}
-        {call.map((item, index) => (
+        {filterData.map((item, index) => (
           <div key={index} className="flex gap-3 items-center">
             <div>{item.icon}</div>
             <div>

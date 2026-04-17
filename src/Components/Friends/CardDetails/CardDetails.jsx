@@ -9,7 +9,7 @@ import { useContext } from "react";
 import { HistoryContext } from "../../../Context/HistoryProvider";
 
 const CardDetails = () => {
-  const { callHandle, chatHandle } = useContext(HistoryContext);
+  const { callHandle, chatHandle, videoHandle } = useContext(HistoryContext);
   const cardData = useLoaderData();
   const { id } = useParams();
   const details = cardData.find((card) => card.id == id);
@@ -127,7 +127,10 @@ const CardDetails = () => {
               <span className="secondary-color font-medium mt-1">Text</span>
             </div>
             {/* Video */}
-            <div className="text-center bg-white shadow-lg rounded-lg p-8">
+            <div
+              onClick={() => videoHandle(name)}
+              className="text-center bg-white shadow-lg rounded-lg p-8"
+            >
               <div className="flex justify-center mb-3">
                 <img src={video} alt="icon" />
               </div>
