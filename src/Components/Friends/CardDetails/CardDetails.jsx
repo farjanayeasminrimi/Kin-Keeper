@@ -22,6 +22,7 @@ const CardDetails = () => {
     goal,
     next_due_date,
     picture,
+    email,
   } = details;
   // console.log(name, tags, status, bio, contact, goal, next_due_date);
 
@@ -52,7 +53,7 @@ const CardDetails = () => {
             ))}
           </div>
           <h3 className="text-[1.1rem] font-medium secondary-color italic ">"{bio}"</h3>
-          <p className="text-[1rem] secondary-color  ">Preferred: email</p>
+          <p className="text-[1rem] secondary-color  ">Preferred: {email}</p>
         </div>
         {/* snooze area */}
         <div className="mt-5 space-y-3">
