@@ -1,6 +1,7 @@
 import { MessageCircleMore, Phone, Video } from "lucide-react";
 import React, { createContext } from "react";
 import { useState } from "react";
+import { toast } from "react-toastify";
 export const HistoryContext = createContext();
 const HistoryProvider = ({ children }) => {
   const [call, setCall] = useState([]);
@@ -13,6 +14,9 @@ const HistoryProvider = ({ children }) => {
     };
     setCall([...call, allCallHistory]);
     setFilterData([...call, allCallHistory]);
+    toast.success("Called Successfully!!", {
+      position: "top-center",
+    });
   };
   const chatHandle = (username) => {
     const allChatHistory = {
@@ -22,6 +26,9 @@ const HistoryProvider = ({ children }) => {
     };
     setCall([...call, allChatHistory]);
     setFilterData([...call, allChatHistory]);
+    toast.success("Sent Text Successfully!!", {
+      position: "top-center",
+    });
   };
   const videoHandle = (username) => {
     const allVideoHistory = {
@@ -31,6 +38,9 @@ const HistoryProvider = ({ children }) => {
     };
     setCall([...call, allVideoHistory]);
     setFilterData([...call, allVideoHistory]);
+    toast.success("Video Call Successful!!", {
+      position: "top-center",
+    });
   };
   const manageFilter = (type) => {
     if (type === "All") {

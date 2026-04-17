@@ -10,6 +10,7 @@ import Stats from "./Pages/Stats/Stats.jsx";
 import NotFound from "./Components/NotFound/NotFound.jsx";
 import CardDetails from "./Components/Friends/CardDetails/CardDetails.jsx";
 import HistoryProvider from "./Context/HistoryProvider.jsx";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HistoryProvider>
       <RouterProvider router={router}></RouterProvider>
+      <ToastContainer />
     </HistoryProvider>
   </StrictMode>,
 );

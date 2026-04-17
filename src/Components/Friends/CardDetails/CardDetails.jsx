@@ -26,7 +26,7 @@ const CardDetails = () => {
   // console.log(name, tags, status, bio, contact, goal, next_due_date);
 
   return (
-    <div className="bg-[#F8FAFC] my-5 py-6 container mx-auto px-4  grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div className="bg-[#F8FAFC] my-5 py-6 container mx-auto px-4  grid grid-cols-1 lg:grid-cols-4 gap-4">
       {/* Side bar */}
       <div className="col-span-1">
         {/* person details */}
