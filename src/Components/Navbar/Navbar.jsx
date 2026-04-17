@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import "../../App.css";
 import { ChartArea, Clock, Home } from "lucide-react";
 
@@ -14,24 +14,36 @@ const Navbar = () => {
         </div>
         <div className="">
           <ul className=" flex gap-7">
-            <Link
-              className="text-[1.1rem] font-medium secondary-color flex items-center gap-1"
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "primary-bg text-white flex items-center gap-1 px-5 py-2 rounded-lg "
+                  : "text-[1.1rem] font-medium secondary-color flex items-center gap-1 px-5 py-2 rounded-lg hover:bg-green-100"
+              }
               to="/"
             >
               <Home size={18}></Home> Home
-            </Link>
-            <Link
-              className="text-[1.1rem] font-medium secondary-color flex items-center gap-1"
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "primary-bg text-white flex items-center gap-1 px-5 py-2 rounded-lg "
+                  : "text-[1.1rem] font-medium secondary-color flex items-center gap-1 px-5 py-2 rounded-lg hover:bg-green-100"
+              }
               to="/timeline"
             >
               <Clock size={18}></Clock> Timeline
-            </Link>
-            <Link
-              className="text-[1.1rem] font-medium secondary-color flex items-center gap-1"
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "primary-bg text-white flex items-center gap-1 px-5 py-2 rounded-lg "
+                  : "text-[1.1rem] font-medium secondary-color flex items-center gap-1 px-5 py-2 rounded-lg hover:bg-green-100"
+              }
               to="/stats"
             >
               <ChartArea size={18}></ChartArea> Stats
-            </Link>
+            </NavLink>
           </ul>
         </div>
       </div>
