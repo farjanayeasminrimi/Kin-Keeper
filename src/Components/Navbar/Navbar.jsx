@@ -13,7 +13,7 @@ const Navbar = () => {
           </h1>
         </div>
         <div className="">
-          <ul className=" flex gap-7">
+          <ul className=" flex gap-2 md:gap-7">
             <NavLink
               className={({ isActive }) =>
                 isActive

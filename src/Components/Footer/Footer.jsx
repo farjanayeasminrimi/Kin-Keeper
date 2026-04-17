@@ -32,11 +32,9 @@ const Footer = () => {
         </nav>
         <div className="flex w-full flex-col">
           <div className="divider p-0 m-0  before:bg-gray-400 after:bg-gray-400 text-gray-600"></div>
-          <div className="flex justify-between items-center w-full px-5">
+          <div className="flex flex-col md:flex-row gap-4 justify-between items-center w-full px-0 md:px-5">
             <aside className="mt-2">
-              <p>
-                Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd
-              </p>
+              <p>Copyright © {new Date().getFullYear()} KeenKeeper. All rights reserved.</p>
             </aside>
             <div className="flex justify-around items-center gap-5">
               <Link to="/policy">Privacy Policy</Link>

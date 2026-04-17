@@ -41,7 +41,7 @@ const Stats = () => {
               isAnimationActive={true}
             />
             <Tooltip></Tooltip>
-            <Legend iconType="circle" wrapperStyle={{ paddingTop: "30px" }}></Legend>
+            <Legend iconType="circle" align="center" wrapperStyle={{ paddingTop: "30px" }}></Legend>
           </PieChart>
         </div>
       </div>
